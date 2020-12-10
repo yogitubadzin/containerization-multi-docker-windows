@@ -1,9 +1,0 @@
-Install Docker desktop for Windows
-
-Run for production:
-1.Open folder with source code and run command: docker-compose up --build
-2.Open browser and type: http://localhost:3060/
-
-Run for development:
-1.Open folder with source code and run command: docker-compose -f docker-compose-dev.yml up --build
-2.Open browser and type: http://localhost:3070/
