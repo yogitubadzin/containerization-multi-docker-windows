@@ -12,7 +12,7 @@ const postgressClient = new Pool({
 postgressClient.on('error', () => console.log('Lost postgress connection'));
 
 postgressClient
-  .query('CREATE TABLE IF NOT EXISTS mathPowerValues (number INT)')
+  .query('CREATE TABLE IF NOT EXISTS mathPowerNumbers (number INT)')
   .catch(err => console.log(err));
 
 exports.postgressClient = postgressClient;

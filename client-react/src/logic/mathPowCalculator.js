@@ -32,6 +32,9 @@ class MathPowCalculator extends Component {
       number: this.state.number
     });
     this.setState({ number: '' });
+    
+    this.fetchAllNumbersWithCalculations();
+    this.fetchAllNumbers();
   };
 
   renderSeenNumbers() {

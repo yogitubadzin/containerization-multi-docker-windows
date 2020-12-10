@@ -24,9 +24,10 @@ app.post('/numbers', async (req, res) => {
   redisPublisher.publish('insert', number);
   postgressClient.query('INSERT INTO mathPowerNumbers(number) VALUES($1)', [number]);
 
-  console.log('Check status for postgress:');
-  var result = await postgressClient.query('SELECT * from mathPowerNumbers');
-  console.log('Postgress value' + result);
+  // LOG
+  var result = postgressClient.query('SELECT * from mathPowerNumbers');
+  console.log('Check status for postgress:' + result);
+  // END LOG
 
   res.send({ working: true });
 });
