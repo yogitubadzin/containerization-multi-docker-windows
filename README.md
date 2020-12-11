@@ -1,4 +1,4 @@
-# multi-docker-app
+# Multi docker app on Windows
 
 ## Install Docker desktop for Windows
 
