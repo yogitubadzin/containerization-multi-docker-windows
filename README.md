@@ -17,3 +17,11 @@
 2.Open browser and type: http://localhost:3070/
 
 3.Redis and postgress need some time, please refresh few times if no effect.
+
+## Useful commands:
+
+1.docker container ls
+ 
+2.docker container logs <container_id>
+ 
+ 
